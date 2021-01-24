@@ -8,6 +8,7 @@
 Для создания новой команды  необходимо  создать класс для новой команды в папке Commands и унаследовать абстрактный класс Command.php.
 После зарегистрировать его в классе CommandManager.php в методе register() 
 Пример:
+
   protected function register(): void
   {    
       $this->bindTo("Cli\Commands\Sum", "sum");
