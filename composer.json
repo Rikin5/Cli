@@ -1,0 +1,23 @@
+{
+    "name": "egorov.ov/cli",
+    "description": "task",
+    "authors": [
+        {
+            "name": "Олег Егоров",
+            "email": "egorovoleg96@yandex.ru"
+        }
+    ],
+    "require": {
+    },
+
+
+    "autoload": {
+        "psr-4": {
+            "Cli\\": "src/Console/Cli/",
+            "Exceptions\\" : "src/Console/Exceptions/",
+            "Parsers\\" : "src/Console/Parsers/",
+            "Console\\" : "src/Console/"
+        }
+    }
+
+}
