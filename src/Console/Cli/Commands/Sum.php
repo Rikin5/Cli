@@ -43,7 +43,7 @@ class Sum extends Command
     {
         $sum = 0;
         foreach ($this->arguments as $argument)
-            $sum += $argument;
+            $sum += (int)$argument;
 
         return $sum;
     }
