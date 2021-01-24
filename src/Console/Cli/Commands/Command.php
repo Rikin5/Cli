@@ -9,6 +9,7 @@ use Console\Output\OutputCommandInterface;
 
 use Exceptions\InvalidArgumentException;
 use Parsers\CommandLineParser;
+use Parsers\LinuxCommandLineParser;
 
 abstract class Command implements CommandInterface
 {
@@ -58,7 +59,7 @@ abstract class Command implements CommandInterface
     public function __construct(array $params)
     {
         $this->initOutput();
-        $parser = new CommandLineParser($params);
+        $parser = new LinuxCommandLineParser($params);
         $this->arguments = $parser->getArguments();
         $this->options = $parser->getOptions();
     }

@@ -9,6 +9,7 @@ use Cli\Commands\Preset;
 use Console\Output\OutputInterface;
 use Console\Output\StreamOutput;
 use Exceptions\CliException;
+use Exceptions\InvalidArgumentException;
 
 abstract class AbstractCommandManager
 {
@@ -120,7 +121,7 @@ abstract class AbstractCommandManager
 
     /**
      * Инициализация вывода
-     * @throws \Exceptions\InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     protected function initOutput(): void
     {
