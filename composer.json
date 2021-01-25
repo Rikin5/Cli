@@ -1,6 +1,7 @@
 {
   "name": "rikin5/cli",
   "type": "library",
+  "version":"1.0.0",
   "description": "Library for creating cli commands",
   "homepage": "https://github.com/Rikin5/Cli.git",
   "authors": [
