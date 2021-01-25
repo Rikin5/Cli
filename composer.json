@@ -1,6 +1,6 @@
 {
     "name": "egorov.ov/cli",
-    "description": "task",
+    "description": "Library for creating cli commands",
     "authors": [
         {
             "name": "Олег Егоров",
@@ -9,8 +9,6 @@
     ],
     "require": {
     },
-
-
     "autoload": {
         "psr-4": {
             "Cli\\": "src/Console/Cli/",
