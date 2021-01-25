@@ -1,15 +1,19 @@
 # Cli
-Библиотека для создания cli команд
+*Библиотека для создания cli команд*
 
-Для генерации автозагрузчика запустите команду composer dump-autoload
+Для генерации автозагрузчика запустите команду 
+sh
+composer dump-autoload
 
-Для работы с библиотекой используйте php bin/cli.php 
+Для работы с библиотекой используйте 
+sh
+php bin/cli.php
 
-Для создания новой команды  необходимо  создать класс для новой команды в папке Commands и унаследовать абстрактный класс Command.php.
-После зарегистрировать его в классе CommandManager.php в методе register() 
-Пример:
+Для создания новой команды необходимо создать класс для новой команды в папке Commands и унаследовать абстрактный класс Command.php. После зарегистрировать его в классе CommandManager.php в методе register()
 
-  protected function register(): void
-  {    
-      $this->bindTo("Cli\Commands\Sum", "sum");
-  }
+#### Пример:
+sh
+protected function register(): void 
+{
+    $this->bindTo("Cli\Commands\Sum", "sum");
+}
